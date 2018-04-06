@@ -2,7 +2,6 @@ import numpy as np
 import matplotlib
 import matplotlib.pyplot as plt
 from matplotlib.widgets import Slider, MultiCursor
-from matplotlib.colors import Colormap
 
 
 def _make_2d(images, mode="max"):
@@ -50,7 +49,7 @@ def dd(image, cmap=plt.cm.viridis, clim=[None, None], hold=False):
 
     """
     if image.ndim is not 2:
-        print("Not a 2D image")
+        raise ValueError("Not a 2D image")
 
     fig, ax = plt.subplots()
     ax.imshow(image, clim=clim, cmap=cmap)

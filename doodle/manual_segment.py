@@ -30,7 +30,7 @@ def _draw_polygon(ax, vertices, alpha=0.4):
     return polygon_object
 
 
-def manual(image, alpha=0.4, return_all=False):
+def manual_segment(image, alpha=0.4, return_all=False):
     """Return a label image based on freeform selections made with the mouse.
 
     Parameters

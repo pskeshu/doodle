@@ -8,7 +8,7 @@ setup(name='doodle',
       author_email='pskesavan@tifrh.res.in',
       license='MIT',
       packages=['doodle'],
-      install_requires=['numpy>=1.12.1',
+      install_requires=['numpy>=1.13.3',
                         'scikit-image>=0.13.0', 
                         'matplotlib>=2.0.0'],
       zip_safe=False)
